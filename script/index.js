@@ -2,8 +2,6 @@ let canvas = document.getElementById('iammusic')
 let ctx = canvas.getContext('2d');
 let textBox = document.getElementById("text");
 
-
-
 const generateText = () => {
     let val = textBox.value.toUpperCase()
     ctx.reset()
@@ -25,6 +23,15 @@ const generateText = () => {
     ctx.fillStyle = "black"; 
     ctx.textAlign = "center"
     ctx.fillText(val, 50 / 0.85, 50);
+}
+
+const save = () => {
+    const dataURL = canvas.toDataURL('image/png');
+
+    const a = document.createElement('a');
+    a.href = dataURL;
+    a.download = 'iam-music.png';
+    a.click();
 }
 
 generateText()
