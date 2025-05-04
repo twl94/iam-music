@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(228, 228, 228);
+    color: white;
+    overflow: hidden;
+    display: flex;
+}
+
+#iammusic {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#container {
+    width: 300px;
+    background: #ededed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#text {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px black solid;
+    outline: 0;
+    text-align: center;
+    display: block;
+    width: 295px;
+    margin-bottom: 5px;
+}
+
+
+button {
+    width: 299px;
+    outline: 0;
+    border-radius: 2px;
+    /* border: 1px solid black; */
+    border: 0;
+    transition: 0.2s all;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #dfdfdf;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+a {
+    text-decoration: none;
+    color: #888888;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3333334b;
+    color: white;
+    padding: 10px;
+}
